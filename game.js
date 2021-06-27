@@ -55,6 +55,8 @@ function nextSequence() {
 	$(document).ready(function () {
 		setInterval(function () {
 			$("#" + randomChosenColor).fadeIn();
+		}, 100);
+		setTimeout(function () {
 			$("#" + randomChosenColor).fadeOut();
 		}, 100);
 	});
