@@ -3,7 +3,7 @@ var gamePattern = [];
 var userClickedPattern = [];
 var started = false;
 var level = 0;
-var personalBest = 0;
+
 $(document).on("keydown", function (e) {
 	if (started === false) {
 		$("#level-title").text("Level " + level);
@@ -97,9 +97,6 @@ function playSound(name) {
 }
 
 function startOver() {
-	if (personalBest <= level - 1) {
-		personalBest = level;
-	}
 	level = 0;
 	gamePattern = [];
 	started = false;
